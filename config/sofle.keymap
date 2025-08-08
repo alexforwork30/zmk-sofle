@@ -31,35 +31,40 @@
         screen_shot: screen_shot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>;
+            bindings = <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>, <&macro_press>;
+
             label = "SCREEN_SHOT";
         };
 
         left_haft_window: left_haft_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp LEFT>;
+            bindings = <&kp LEFT_WIN &kp LEFT>, <&macro_press>;
+
             label = "LEFT_HAFT_WINDOW";
         };
 
         right_haft_window: right_haft_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp RIGHT>;
+            bindings = <&kp LEFT_WIN &kp RIGHT>, <&macro_press>;
+
             label = "RIGHT_HAFT_WINDOW";
         };
 
         xbox_screen_recording: xbox_screen_recording {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp G>;
+            bindings = <&kp LEFT_WIN &kp G>, <&macro_press>;
+
             label = "XBOX_SCREEN_RECORDING";
         };
 
         find_all: find_all {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_SHIFT &kp F>;
+            bindings = <&kp LCTRL &kp LEFT_SHIFT &kp F>, <&macro_press>;
+
             label = "FIND_ALL";
         };
     };
